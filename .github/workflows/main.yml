@@ -71,5 +71,5 @@ jobs:
           # Выполняет pull образа с DockerHub
           docker pull yevgeniyshapalin/infra_actions
           #остановка всех контейнеров
-          docker stop $(sudo docker ps -a -q)
+          docker stop $(docker ps -a -q)
           docker run --rm -d -p 5000:5000 yevgeniyshapalin/infra_actions 
